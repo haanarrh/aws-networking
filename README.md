@@ -1,2 +1,3 @@
-Networking and Secuure Storage on AWS
+Networking and Secure Storage on AWS
+steps to creating a vpc
 
