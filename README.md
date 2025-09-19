@@ -24,7 +24,5 @@ AWS provides a default VPC in each region, offering a pre-configured network fcr
 * Create subnet: Create four subnets within your VPC: two public and two private. Assign them non-overlapping CIDR blocks (e.g., 10.0.1.0/24, 10.0.2.0/24, 10.0.3.0/24, 10.0.4.0/24). Place each subnet in a different Availability Zone for redundancy.
 * Create an Internet Gateway: Create an IGW and attach it to your custom VPC. This enables communication with the internet.
 <img width="1700" height="750" alt="image" src="https://github.com/user-attachments/assets/bc5c9e3f-4779-442e-9678-dab0e5a08cd1" />
-* To create a VPC in AWS CLI 
-aws ec2 create-vpc --instance-tenancy "default" --cidr-block "10.0.0.0/16" --tag-specifications '{"resourceType":"vpc","tags":[{"key":"Name","value":"Demo_Vpc"}]}' 
 
 ** These steps establish the foundation for your custom VPC, creating the network infrastructure required to connect your resources.
