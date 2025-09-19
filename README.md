@@ -1,2 +1,3 @@
-bucket policies and encryption
-S3 buckets are basically storage systems in the aws
+## AMAZON SECURE NETWORKING
+### Getting started with Amazon Virtual Private Cloud (VPC)
+This lab guides you through the process of configuring a VPC on aws. Starting with an overview of the default VPC and its components, then div ing into building a custom VPC from scratch. With this lab you should learn tfo create subnets, route tables,internet gateways, and NAT gateways, and configure security groups to control network traffic. By the end of this lab, you'll have a solid understanding of VPC networking concepts andpractgical experience inbuilding secure and scalable network infrastructure in AWS. 
