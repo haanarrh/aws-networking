@@ -14,15 +14,11 @@ AWS provides a default VPC in each region, offering a pre-configured network fcr
 * Main Network ACL (NACL): acts as a firewall at the subnet level, controlling  ingress and egress traffic. The default NACL allowss all traffic unless specified. 
 * Subnets: Default VPCs include a subnet in each Availability Zone within the region, providing high availability. Each subnet is associated with the Main Route Table and NACL.
 * Internet Gateway (IGW): The IGW allows communication between the VPC and the internet. The default VPC includes an IGW and a default route in the Main Route Table that sends all internet-bound traffic to the IGW.
-  <img width="1700" height="750" alt="Screenshot 2025-09-19 125940" src="https://github.com/user-attachments/assets/1b202d39-bd12-4738-9402-7ef52b71be7c" />
-
 ** To inspect the Default VPC, navigate to the VPC Dashboard and select Your VPCs. You can explore each component from there.
 
 ## Configuring a custom VPC:
 * Create a VPC: In the VPC dashboard, choose "create VPC". specify a name tag and a CIDR block (e.g., 10.0.0.0/16). Consider CIDR.xyz to determine suitable IPv4 address ranges.
-  <img width="1700" height="750" alt="Screenshot 2025-09-19 124138" src="https://github.com/user-attachments/assets/a60d149a-bc3c-42d5-ba59-9778eb56ffd2" />
 * Create subnet: Create four subnets within your VPC: two public and two private. Assign them non-overlapping CIDR blocks (e.g., 10.0.1.0/24, 10.0.2.0/24, 10.0.3.0/24, 10.0.4.0/24). Place each subnet in a different Availability Zone for redundancy.
 * Create an Internet Gateway: Create an IGW and attach it to your custom VPC. This enables communication with the internet.
-<img width="1700" height="750" alt="image" src="https://github.com/user-attachments/assets/bc5c9e3f-4779-442e-9678-dab0e5a08cd1" />
 
 ** These steps establish the foundation for your custom VPC, creating the network infrastructure required to connect your resources.
